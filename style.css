@@ -442,6 +442,12 @@ body::after {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+
+.hide-desktop { display: none !important; }
+@media (max-width: 1024px) {
+  .hide-desktop { display: flex !important; }
+  .hide-mobile { display: none !important; }
+}
 .scroll-indicator {
   position: absolute;
   bottom: 32px;
@@ -834,6 +840,18 @@ body::after {
   flex-shrink: 0;
   margin-top: 1px;
 }
+.exp-image-wrap {
+  margin: 16px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-glass);
+  max-width: 320px;
+}
+.exp-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* =========================================
    SERVICES
@@ -1080,8 +1098,8 @@ body::after {
 }
 @media (max-width: 480px) {
   .hero-name { font-size: 2.5rem; }
-  .hero-image-wrap { transform: scale(0.85); }
-  .hero-float-tag:nth-child(4) { top: -25px; right: -25px; }
+  .hero-image-wrap { transform: scale(0.85); margin: 20px 0; }
+  .hero-float-tag:nth-child(4) { top: -45px; right: -15px; }
   .hero-float-tag:nth-child(5) { bottom: -45px; left: -15px; }
   .hero-btns { flex-direction: column; }
   .hero-btns .btn { width: 100%; justify-content: center; }
