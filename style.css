@@ -445,7 +445,10 @@ body::after {
 
 .hide-desktop { display: none !important; }
 @media (max-width: 1024px) {
-  .hide-desktop { display: flex !important; }
+  .hide-desktop { 
+    display: flex !important; 
+    margin: 48px 0;
+  }
   .hide-mobile { display: none !important; }
 }
 .scroll-indicator {
@@ -1098,7 +1101,7 @@ body::after {
 }
 @media (max-width: 480px) {
   .hero-name { font-size: 2.5rem; }
-  .hero-image-wrap { transform: scale(0.85); margin: 20px 0; }
+  .hero-image-wrap { transform: scale(0.85); margin: 30px 0 80px 0; }
   .hero-float-tag:nth-child(4) { top: -45px; right: -15px; }
   .hero-float-tag:nth-child(5) { bottom: -45px; left: -15px; }
   .hero-btns { flex-direction: column; }
